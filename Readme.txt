@@ -1,6 +1,3 @@
-Thanks for downloading this template!
+This is Yada School of Tech
 
-Template Name: Yada School of Tech
-Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Our school is a welcoming, diverse, and supportive community for aspiring coders who are not only going to be coders but will also get to learn their identity in Jesus Christ.
