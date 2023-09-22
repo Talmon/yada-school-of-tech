@@ -401,9 +401,10 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
-  background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
+  height: 100vh;
+  /* background: url("../img/hero-bg.jpg") top center; */
+  /* background-size: cover; */
+  background-color: #D4AF37;
   position: relative;
 }
 
@@ -422,25 +423,73 @@ h6 {
 }
 
 @media (max-width: 992px) {
+  /* @media (min-width: 768px) { */
   #hero .container {
     padding-top: 62px;
   }
+
+  #hero {
+    height: 80vh;
+  }
+
+  #hero h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    /* line-height: 76px; */
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #hero h2 {
+    color: #eee;
+    margin: 10px 0 0 0;
+    font-size: 24px;
+  }
+
+  .video-wrapper {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    /* position: relative; */
+    /* margin-top: 200px; */
+  
+    width: 100%;
+    height: 100%;
+  
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+  
+    /* Centering the container's content vertically 
+    and horizontally */
+    /* text-align: center; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  video {
+    /** Simulationg background-size: cover */
+    /* margin-top: 20px; */
+    /* padding: 10%; */
+
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+
+  
+    position: relative;
+    top: 0;
+    /* margin-top: -280px; */
+  }
+
+  .after-video {
+    /* float: right; */
+    margin-top: 70px;
+  }
 }
 
-#hero h1 {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
 
-#hero h2 {
-  color: #eee;
-  margin: 10px 0 0 0;
-  font-size: 24px;
-}
 
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
@@ -463,23 +512,110 @@ h6 {
 
 @media (min-width: 1024px) {
   #hero {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    background-color: #D4AF37;
+  }
+
+  .video-wrapper {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    /* position: relative; */
+    /* margin-top: 200px; */
+  
+    width: 100%;
+    height: 800px;
+  
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+  
+    /* Centering the container's content vertically 
+    and horizontally */
+    /* text-align: center; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  video {
+    /** Simulationg background-size: cover */
+    /* margin-top: 20px; */
+    /* padding: 10%; */
+
+    object-fit: cover;
+    height: 800px;
+    width: 500px;
+  
+    position: absolute;
+    /* top: 0; */
+    /* margin-left: -300px; */
+  }
+
+  .after-video {
+    /* float: right; */
+    margin-top: 30%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   #hero {
-    height: 100vh;
+    height: 165vh;
   }
 
   #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    /* line-height: 76px; */
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #hero h2 {
+    color: #eee;
+    margin: 10px 0 0 0;
+    font-size: 18px;
   }
 
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
+  .video-wrapper {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    /* position: relative; */
+    /* margin-top: 200px; */
+  
+    width: 100%;
+    height: 100%;
+  
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+  
+    /* Centering the container's content vertically 
+    and horizontally */
+    /* text-align: center; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  video {
+    /** Simulationg background-size: cover */
+    /* margin-top: 20px; */
+    /* padding: 10%; */
+
+    object-fit: fill;
+    width: 100%;
+    height: 88%;
+
+  
+    position: relative;
+    top: 0;
+    /* margin-top: -280px; */
+  }
+
+  .after-video {
+    /* float: right; */
+    margin-top: -30px;
   }
 }
 
@@ -1567,4 +1703,138 @@ section {
   background: #3ac162;
   color: #fff;
   text-decoration: none;
+}
+
+@media (min-width: 991.98px) and (max-width:  1199.98px) { 
+  
+
+  #hero {
+    height: 110vh;
+  }
+
+  #hero h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 76px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #hero h2 {
+    color: #eee;
+    margin: 10px 0 0 0;
+    font-size: 34px;
+  }
+
+  .video-wrapper {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    /* position: relative; */
+    /* margin-top: 200px; */
+  
+    width: 100%;
+    height: 100%;
+  
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+  
+    /* Centering the container's content vertically 
+    and horizontally */
+    /* text-align: center; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  video {
+    /** Simulationg background-size: cover */
+    /* margin-top: 20px; */
+    /* padding: 10%; */
+
+    object-fit: fill;
+    width: 100%;
+    height: 88%;
+
+  
+    position: relative;
+    top: 0;
+    /* margin-top: -280px; */
+  }
+
+  .after-video {
+    /* float: right; */
+    margin-top: 30px;
+  }
+
+}
+
+  
+
+@media (min-width: 1200px ) { 
+  
+
+  #hero {
+    height: 110vh;
+  }
+
+  #hero h1 {
+    margin: 0;
+    font-size: 55px;
+    font-weight: 700;
+    /* line-height: 76px; */
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #hero h2 {
+    color: #eee;
+    margin: 10px 0 0 0;
+    font-size: 34px;
+  }
+
+  .video-wrapper {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    /* position: relative; */
+    /* margin-top: 200px; */
+  
+    width: 100%;
+    height: 100%;
+  
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+  
+    /* Centering the container's content vertically 
+    and horizontally */
+    /* text-align: center; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  video {
+    /** Simulationg background-size: cover */
+    /* margin-top: 20px; */
+    /* padding: 10%; */
+
+    object-fit: fill;
+    width: 100%;
+    height: 88%;
+
+  
+    position: relative;
+    top: 0;
+    /* margin-top: -280px; */
+  }
+
+  .after-video {
+    /* float: right; */
+    margin-top: 100px;
+  }
+
+  
+  
 }
